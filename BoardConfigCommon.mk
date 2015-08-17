@@ -75,10 +75,8 @@ BLUETOOTH_HCI_USE_MCT := true
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# CM Hardware
-BOARD_HARDWARE_CLASS += device/oppo/msm8974-common/cmhw
-
 # Graphics
+BOARD_EGL_CFG := device/oppo/msm8974-common/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
 TARGET_USES_C2D_COMPOSITION := true
@@ -156,6 +154,8 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
+# Expirerment
+WITH_DEXPREOPT := true
 
 # inherit from the proprietary version
 ifneq ($(QCPATH),)

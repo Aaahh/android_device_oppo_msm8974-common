@@ -30,6 +30,7 @@
 #define LOG_TAG "LocSvc_EngAdapter"
 
 #include <LocEngAdapter.h>
+#include <string.h>
 #include "loc_eng_msg.h"
 #include "loc_log.h"
 
